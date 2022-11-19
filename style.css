@@ -1,0 +1,292 @@
+/*upper case*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: cursive;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+body
+{
+  background-image:url(bluebackgroung.png) ;
+  background-repeat: no-repeat;
+  background-size:cover;
+ 
+}
+
+#navbar
+{
+  background-image: linear-gradient(to bottom left, rgba(9, 106, 180, 0.573) , rgb(0, 84, 112)) ;
+  background-size: 100%;
+  height: 50px;
+  color:#f7c08a;
+  font-size: 20px;
+}
+
+.container
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+}
+
+.container h1 {
+  color:#f7c08a;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  padding-left: 30px;
+  
+}
+
+
+.container ul
+{ 
+  display: flex;
+  gap: 13px;
+}
+
+.container li {
+  list-style: none;
+}
+
+.container  a  {
+   
+   /* padding: 20px;   */
+   color:#f7c08a;
+   text-decoration: none;
+   text-transform: capitalize
+}
+
+
+#navbar .container ul a:hover {
+  text-decoration: dashed;
+  color:rgb(233, 198, 0);
+  /* background-color:rgb(101, 143, 157); */
+
+}
+
+
+
+/*image*/
+
+
+
+#bg-1 .container 
+{
+ margin-top: 30px;
+ display: flex;
+ flex-direction: column-reverse;
+ align-items: center;
+ gap: 50px
+ 
+}
+
+
+#bg-1 .container .info-img 
+{
+  background-image:linear-gradient(to bottom left, rgb(49, 163, 244), lightblue);
+  border-radius: 50%;
+  
+
+  
+  animation: spinning 3s infinite ease-in-out
+ 
+}
+
+@keyframes spinning 
+ {
+  0%
+  {
+     border: 10px solid  rgb(49, 163, 244);
+     border-top: 10px solid white;
+  }
+
+  25% 
+  {
+    border:  5px solid lightblue ;
+    border-right: 5px solid white;  
+  }
+
+  75%
+  {
+    border: 5px solid  rgb(49, 163, 244) ;
+    border-left: 5px solid white; 
+  }
+
+  100%
+  {
+    border: 10px solid  lightblue ;
+    border-bottom: 10px solid white; 
+  }
+} 
+
+.container .info-img img
+{
+  border-radius: 50%;
+  height:350px;
+  width:350px;
+  margin: 30px 30px;   
+  padding:30px;
+
+
+  
+
+  
+}
+
+.container .name h1
+{
+ font-size: 50px;
+ color: rgb(23, 240, 255);
+ text-align: right;
+ padding-top: 20px;
+ 
+
+ position:relative ;
+ animation: texts 3s infinite ease-in-out
+
+ 
+} 
+
+#bg-1 .container h3
+{
+  text-align:center;
+  font-size: 25px;
+  padding-bottom: 10px;
+  
+
+  position:relative ;
+  animation: texts 3s infinite ease-in-out
+
+}
+
+@keyframes texts  
+{
+
+  from
+  {
+   text-shadow:5px 3px  rgb(228, 75, 255);
+   color:skyblue ;
+  }
+  to 
+  { 
+    
+    text-shadow: 5px 3px  rgb(46, 2, 134);
+    color: rgba(251, 255, 0, 0.797);
+    
+  }
+
+}
+
+
+#bg-1 .container h1 span
+{
+  color:rgba(197, 255, 4, 0.76);
+}
+
+
+/* img 2 */
+
+#bg-2 .container
+{
+
+  margin-top: 100px;
+  
+ 
+ 
+}
+
+#bg-2 .container .info-img2
+{
+   
+  background-image:linear-gradient(to bottom left, rgb(244, 49, 182), rgb(230, 173, 218));
+   border:10px;
+   border-radius: 50%;
+   display: flex;
+   margin-left: 30px;
+
+   
+
+   
+   animation: spinning2 4s infinite ease-in-out
+}
+
+@keyframes spinning2
+ {
+  0%
+  {
+     border: 10px solid rgb(244, 49, 182) ;
+     border-top: 10px solid rgb(230, 173, 218)e;
+  }
+
+  25% 
+  {
+    border: 5px solid rgb(230, 173, 218) ;
+    border-right: 5px solid rgb(244, 49, 182)  
+  }
+
+  75%
+  {
+    border: 5px solid  rgb(244, 49, 182) ;
+    border-left: 5px solid rgb(230, 173, 218); 
+  }
+
+  100%
+  {
+    border: 10px solid  rgb(230, 173, 218) ;
+    border-bottom: 10px solid rgb(244, 49, 182);
+  }
+} 
+
+
+#bg-2 .container .info-img2 img
+{
+  border-radius: 50%;
+  height:350px;
+  width:350px;
+  margin: 30px 30px;
+}
+
+#bg-2 .container .info-1
+{
+  text-align: justify;
+}
+
+
+#bg-2 .container .info-1 h1
+{
+  font-size: 40px;
+  animation: text-2 4s infinite ease-in-out
+}
+
+#bg-2 .container .info-1 p
+{
+  animation: text-2 4s infinite ease-in-out
+}
+
+
+@keyframes text-2 
+{
+   from
+   {
+     text-shadow: rgb(255, 226, 80);
+     color:  rgb(185, 255, 23);;
+   }
+
+   to
+   {
+     text-shadow: coral;
+     color: #66f805;
+   }
+}
+
+
+.aboutme
+{
+  color:rgb(250, 225, 0);
+}
+
